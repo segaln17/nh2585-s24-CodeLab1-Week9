@@ -1,5 +1,6 @@
-# FILL IN INFO ABOUT YOUR GAME HERE. 
+# RUMMAGE THROUGH TRASH 
 
-DO NOT LEAVE IT LIKE THIS!!!
+A game about rummaging through trash to bring stuff to a party.
 
-Please? Please, give me content. I'm begging you. It's not that hard. Thanks.
+Second scene currently empty but will have things in it
+CURRENT ISSUE: last scriptable object text not displaying
