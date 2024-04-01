@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ea5b7a09e65a44f8d34b485d5767da, type: 3}
   m_Name: Old Book
   m_EditorClassIdentifier: 
-  itemName: Old Book
+  itemName: Old Book?
   itemDesc: It says "the Bible" on the front. What's that?
   nextItem: {fileID: 11400000, guid: 5405d97de947ef64c93dd523b861849e, type: 2}
   icon: {fileID: 21300000, guid: ba7a4fcf9c5450042b910f1dafe4ef9d, type: 3}

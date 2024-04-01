@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ea5b7a09e65a44f8d34b485d5767da, type: 3}
-  m_Name: Rusty Knife
+  m_Name: Bee Gees CD
   m_EditorClassIdentifier: 
-  itemName: Rusty Knife
-  itemDesc: A knife... it's rusty?
+  itemName: Bee Gees CD Case
+  itemDesc: Inside is a copy of the movie "Mean Girls 2."
   nextItem: {fileID: 11400000, guid: 753daf23e71d69d42bbf50434f64d9d6, type: 2}
-  icon: {fileID: 21300000, guid: 6dfd680655466f545b95d53a97df8122, type: 3}
+  icon: {fileID: 0}
