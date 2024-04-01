@@ -1,6 +1,5 @@
 # RUMMAGE THROUGH TRASH 
 
-A game about rummaging through trash to bring stuff to a party.
+A game about rummaging through trash to bring to a backyard party!!
 
-Second scene currently empty but will have things in it
-CURRENT ISSUE: last scriptable object text not displaying
+The last scriptable object text isn't displaying but there's just a placeholder in there so it's ignorable
