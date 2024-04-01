@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/TrashCanScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/RoadToParty.unity
     guid: 5cfc1b4a56d271c44aabb91b36d35d4d
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: eec7b98c77974bb4d97392bbe0338aa5
   m_configObjects: {}

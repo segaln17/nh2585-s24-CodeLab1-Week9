@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //change menu to include new ScriptableObject asset:
 [CreateAssetMenu
@@ -18,6 +20,7 @@ public class ItemScriptableObject : ScriptableObject
     
     public void UpdateInventory(GameManager gm)
     {
+        //for rummage scene only:
         if (gm.itemsFound.Count < gm.maxItems)
         {
             //update text to reflect item picked up:
@@ -27,7 +30,7 @@ public class ItemScriptableObject : ScriptableObject
             Debug.Log(gm.itemsFound.Count);
             Debug.Log(gm.maxItems);
         }
-        if (gm.itemsFound.Count == gm.maxItems)
+        if (gm.itemsFound.Count == gm.maxItems && SceneManager.sceneCount != 2)
         {
             gm.title.text = "YOU'RE OUT OF HANDS!";
             gm.title.text = "YA GOT NO MORE HANDS!";
@@ -43,6 +46,14 @@ public class ItemScriptableObject : ScriptableObject
         } 
         */
         
+    }
+
+    public void RemoveFromInventory(GameManager gm)
+    {
+        //Debug.Log(gm.itemsFound);
+        gm.itemList.text += "\n" + gm.currentItem.itemName;
+        
+        //gm.itemList.text = gm.itemsFound[0].itemName + gm.itemsFound[1].itemName;
     }
 }
 
