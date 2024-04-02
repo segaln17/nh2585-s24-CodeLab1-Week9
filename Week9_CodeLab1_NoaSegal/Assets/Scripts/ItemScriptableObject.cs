@@ -15,27 +15,28 @@ public class ItemScriptableObject : ScriptableObject
 {
     public string itemName; //what the item is
     public string itemDesc; //description of item
-    public ItemScriptableObject nextItem;
+    public ItemScriptableObject nextItem; //the item that will come after this one
     public Sprite icon; //what the item looks like
     
     public void UpdateInventory(GameManager gm)
     {
         //for rummage scene only:
-        if (gm.itemsFound.Count < gm.maxItems)
+        if (gm.itemsFound.Count < gm.maxItems) //if there's still space in the list
         {
             //update text to reflect item picked up:
             gm.title.text = itemName;
             gm.description.text = itemDesc;
-            gm.itemList.text += "\n" + gm.currentItem.itemName;
-            Debug.Log(gm.itemsFound.Count);
-            Debug.Log(gm.maxItems);
+            gm.itemList.text += "\n" + gm.currentItem.itemName; 
+            //Debug.Log(gm.itemsFound.Count);
+            //Debug.Log(gm.maxItems);
         }
-        if (gm.itemsFound.Count == gm.maxItems && SceneManager.sceneCount != 2)
+        if (gm.itemsFound.Count == gm.maxItems && SceneManager.sceneCount != 2) 
+            //ideally what this would do is when you max out on items, it tells you so
         {
             gm.title.text = "YOU'RE OUT OF HANDS!";
             gm.title.text = "YA GOT NO MORE HANDS!";
-            Debug.Log(gm.itemsFound.Count);
-            Debug.Log(gm.maxItems);
+            //Debug.Log(gm.itemsFound.Count);
+            //Debug.Log(gm.maxItems);
         }
         /*
         else
@@ -48,12 +49,13 @@ public class ItemScriptableObject : ScriptableObject
         
     }
 
+    //for end scene only:
     public void RemoveFromInventory(GameManager gm)
     {
         //Debug.Log(gm.itemsFound);
         gm.itemList.text += "\n" + gm.currentItem.itemName;
-        
-        //gm.itemList.text = gm.itemsFound[0].itemName + gm.itemsFound[1].itemName;
+        //just updates the list of items burned
+    
     }
 }
 

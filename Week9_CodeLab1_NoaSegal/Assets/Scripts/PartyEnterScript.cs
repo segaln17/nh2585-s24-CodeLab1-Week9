@@ -18,6 +18,7 @@ public class PartyEnterScript : MonoBehaviour
         
     }
 
+    //when the player collides with the building, go to the end scene
     private void OnCollisionEnter(Collision other)
     {
         SceneManager.LoadScene("EndScene");
